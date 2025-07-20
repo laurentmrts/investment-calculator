@@ -1,6 +1,8 @@
+import InputGroup from "./components/InputGroup.jsx";
+
 function App() {
   return (
-    <h2>Hello</h2>
+    <InputGroup />
   )
 }
 
