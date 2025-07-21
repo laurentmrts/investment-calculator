@@ -9,7 +9,7 @@ export default function SingleInput({label, inputsToCalculate, onChange}) {
       <input
         type="number"
         required
-        value={inputsToCalculate[label]}
+        value={inputsToCalculate}
         onChange={(event) =>
           onChange(label, event.target.value)
         }
