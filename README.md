@@ -13,3 +13,8 @@
 - [X] Derive investment results with help of the provided utility function
 - [X] Display investment results in a HTML table (use \<table>, \<thread>, \<tbody>, \<tr>, \<th>, \<td>)
 - [X] Conditionally display an info message if an invalid duration (<1) was entered
+
+## Future feature
+- [ ] adding dark mode
+- [ ] adding currency choice
+- [ ] adding language choice
