@@ -1,0 +1,273 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Results component > should match snapshot 1`] = `
+<div
+  data-testid="container"
+>
+  <section
+    id="user-input"
+  >
+    <div
+      class="input-group"
+      data-testid="inputs"
+    >
+      <p
+        data-testid="inputs-initialInvestment"
+      >
+        <label
+          data-testid="inputs-initialInvestment-label"
+        >
+          INITIAL INVESTMENT
+        </label>
+        <input
+          data-testid="inputs-initialInvestment-input"
+          required=""
+          type="number"
+          value="10000"
+        />
+      </p>
+      <p
+        data-testid="inputs-annualInvestment"
+      >
+        <label
+          data-testid="inputs-annualInvestment-label"
+        >
+          ANNUAL INVESTMENT
+        </label>
+        <input
+          data-testid="inputs-annualInvestment-input"
+          required=""
+          type="number"
+          value="1000"
+        />
+      </p>
+      <p
+        data-testid="inputs-expectedReturn"
+      >
+        <label
+          data-testid="inputs-expectedReturn-label"
+        >
+          EXPECTED RETURN
+        </label>
+        <input
+          data-testid="inputs-expectedReturn-input"
+          required=""
+          type="number"
+          value="5"
+        />
+      </p>
+      <p
+        data-testid="inputs-duration"
+      >
+        <label
+          data-testid="inputs-duration-label"
+        >
+          DURATION
+        </label>
+        <input
+          data-testid="inputs-duration-input"
+          required=""
+          type="number"
+          value="10"
+        />
+      </p>
+    </div>
+  </section>
+  <table
+    data-testid="results"
+    id="result"
+  >
+    <thead>
+      <tr>
+        <th>
+          Year
+        </th>
+        <th>
+          Investment Value
+        </th>
+        <th>
+          Interest (Year)
+        </th>
+        <th>
+          Total Interest
+        </th>
+        <th>
+          Invested Capital
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          1
+        </td>
+        <td>
+          11 500 €
+        </td>
+        <td>
+          500 €
+        </td>
+        <td>
+          500 €
+        </td>
+        <td>
+          11 000 €
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2
+        </td>
+        <td>
+          13 075 €
+        </td>
+        <td>
+          575 €
+        </td>
+        <td>
+          1 075 €
+        </td>
+        <td>
+          12 000 €
+        </td>
+      </tr>
+      <tr>
+        <td>
+          3
+        </td>
+        <td>
+          14 729 €
+        </td>
+        <td>
+          654 €
+        </td>
+        <td>
+          1 729 €
+        </td>
+        <td>
+          13 000 €
+        </td>
+      </tr>
+      <tr>
+        <td>
+          4
+        </td>
+        <td>
+          16 465 €
+        </td>
+        <td>
+          736 €
+        </td>
+        <td>
+          2 465 €
+        </td>
+        <td>
+          14 000 €
+        </td>
+      </tr>
+      <tr>
+        <td>
+          5
+        </td>
+        <td>
+          18 288 €
+        </td>
+        <td>
+          823 €
+        </td>
+        <td>
+          3 288 €
+        </td>
+        <td>
+          15 000 €
+        </td>
+      </tr>
+      <tr>
+        <td>
+          6
+        </td>
+        <td>
+          20 203 €
+        </td>
+        <td>
+          914 €
+        </td>
+        <td>
+          4 203 €
+        </td>
+        <td>
+          16 000 €
+        </td>
+      </tr>
+      <tr>
+        <td>
+          7
+        </td>
+        <td>
+          22 213 €
+        </td>
+        <td>
+          1 010 €
+        </td>
+        <td>
+          5 213 €
+        </td>
+        <td>
+          17 000 €
+        </td>
+      </tr>
+      <tr>
+        <td>
+          8
+        </td>
+        <td>
+          24 324 €
+        </td>
+        <td>
+          1 111 €
+        </td>
+        <td>
+          6 324 €
+        </td>
+        <td>
+          18 000 €
+        </td>
+      </tr>
+      <tr>
+        <td>
+          9
+        </td>
+        <td>
+          26 540 €
+        </td>
+        <td>
+          1 216 €
+        </td>
+        <td>
+          7 540 €
+        </td>
+        <td>
+          19 000 €
+        </td>
+      </tr>
+      <tr>
+        <td>
+          10
+        </td>
+        <td>
+          28 867 €
+        </td>
+        <td>
+          1 327 €
+        </td>
+        <td>
+          8 867 €
+        </td>
+        <td>
+          20 000 €
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

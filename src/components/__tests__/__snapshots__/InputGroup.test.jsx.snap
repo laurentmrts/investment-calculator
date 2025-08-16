@@ -1,0 +1,69 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`InputGroup component > should match snapshot 1`] = `
+<div
+  class="input-group"
+  data-testid="testId"
+>
+  <p
+    data-testid="testId-initialInvestment"
+  >
+    <label
+      data-testid="testId-initialInvestment-label"
+    >
+      INITIAL INVESTMENT
+    </label>
+    <input
+      data-testid="testId-initialInvestment-input"
+      required=""
+      type="number"
+      value="10000"
+    />
+  </p>
+  <p
+    data-testid="testId-annualInvestment"
+  >
+    <label
+      data-testid="testId-annualInvestment-label"
+    >
+      ANNUAL INVESTMENT
+    </label>
+    <input
+      data-testid="testId-annualInvestment-input"
+      required=""
+      type="number"
+      value="1200"
+    />
+  </p>
+  <p
+    data-testid="testId-expectedReturn"
+  >
+    <label
+      data-testid="testId-expectedReturn-label"
+    >
+      EXPECTED RETURN
+    </label>
+    <input
+      data-testid="testId-expectedReturn-input"
+      required=""
+      type="number"
+      value="5"
+    />
+  </p>
+  <p
+    data-testid="testId-duration"
+  >
+    <label
+      data-testid="testId-duration-label"
+    >
+      DURATION
+    </label>
+    <input
+      data-testid="testId-duration-input"
+      required=""
+      type="number"
+      value="10"
+    />
+  </p>
+</div>
+`;

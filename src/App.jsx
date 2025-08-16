@@ -23,9 +23,9 @@ function App() {
 
   return (
     <>
-      <InputGroup inputsToCalculate={userInput} onChange={handleInputChange} />
-      {intputIsValid && <Results input={userInput}/>}
-      {!intputIsValid && <p className="center">Please enter a duration greater than zero</p>}
+      <InputGroup inputsToCalculate={userInput} onChange={handleInputChange} testId="inputs"/>
+      {intputIsValid ? <Results input={userInput} testId="results"/> :
+            <p className="center" data-testid="warn-duration">Please enter a duration greater than zero</p>}
     </>
   )
 }

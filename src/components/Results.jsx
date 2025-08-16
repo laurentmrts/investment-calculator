@@ -1,11 +1,11 @@
 import {calculateInvestmentResults, formatter} from "../util/investment.js";
 
-export default function Results({ input }) {
+export default function Results({ input, testId }) {
   const resultData = calculateInvestmentResults(input);
   const initialInvestment = resultData[0].valueEndOfYear - resultData[0].interest - resultData[0].annualInvestment;
 
   return (
-    <table id="result">
+    <table id="result" data-testid={testId}>
       <thead>
         <tr>
           <th>Year</th>

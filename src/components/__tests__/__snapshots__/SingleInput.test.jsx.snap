@@ -1,0 +1,19 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SingleInput component > should match snapshot 1`] = `
+<p
+  data-testid="testId"
+>
+  <label
+    data-testid="testId-label"
+  >
+    A CAMEL CASE LABEL
+  </label>
+  <input
+    data-testid="testId-input"
+    required=""
+    type="number"
+    value="1"
+  />
+</p>
+`;
