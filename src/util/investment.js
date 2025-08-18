@@ -16,6 +16,7 @@ export function calculateInvestmentResults({
   for (let i = 0; i < duration; i++) {
     const interestEarnedInYear = investmentValue * (expectedReturn / 100);
     investmentValue += interestEarnedInYear + annualInvestment;
+    // TODO: ajouter un champ investedCapital et interestSum
     annualData.push({
       year: i + 1, // year identifier
       interest: interestEarnedInYear, // the amount of interest earned in this year
