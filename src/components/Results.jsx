@@ -17,6 +17,7 @@ export default function Results({ input, testId }) {
       </thead>
       <tbody>
         {resultData.map((yearData) => {
+          // TODO: ces valeurs sont calculees par calculateInvestmentResults
           const totalInterestValue = yearData.valueEndOfYear - yearData.annualInvestment * yearData.year - initialInvestment;
           const totalAmountInvested = yearData.valueEndOfYear - totalInterestValue;
 

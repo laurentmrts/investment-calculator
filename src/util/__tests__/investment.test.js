@@ -61,6 +61,40 @@ describe('investment module', () => {
             expect(resSecondYear.valueEndOfYear).toEqual(13485)
             expect(resSecondYear.annualInvestment).toEqual(1200)
         })
+
+        it('calculate invested capital throughout the years', () => {
+            const res = calculateInvestmentResults({
+                initialInvestment: 10000,
+                duration: 5,
+                annualInvestment: 1200,
+                expectedReturn: 5
+            })
+
+            expect(res).not.toBeNull()
+            expect(res).toHaveLength(5)
+            expect(res[0].investedCapital).toEqual(11200)
+            expect(res[1].investedCapital).toEqual(12400)
+            expect(res[2].investedCapital).toEqual(13600)
+            expect(res[3].investedCapital).toEqual(14800)
+            expect(res[4].investedCapital).toEqual(16000)
+        })
+
+        it('calculate sum of interests', () => {
+            const res = calculateInvestmentResults({
+                initialInvestment: 10000,
+                duration: 5,
+                annualInvestment: 1200,
+                expectedReturn: 5
+            })
+
+            expect(res).not.toBeNull()
+            expect(res).toHaveLength(5)
+            expect(res[0].interestSum).toEqual(500)
+            expect(res[1].interestSum).toEqual(1085)
+            expect(res[2].interestSum).toEqual(1759)
+            expect(res[3].interestSum).toEqual(2527)
+            expect(res[4].interestSum).toEqual(3394)
+        })
     })
 
 })
