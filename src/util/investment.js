@@ -1,32 +1,38 @@
-// This function expects a JS object as an argument
-// The object should contain the following properties
-// - initialInvestment: The initial investment amount
-// - annualInvestment: The amount invested every year
-// - expectedReturn: The expected (annual) rate of return
-// - duration: The investment duration (time frame)
-export function calculateInvestmentResults({
-  initialInvestment,
-  annualInvestment,
-  expectedReturn,
-  duration,
-}) {
-  const annualData = [];
-  let investmentValue = initialInvestment;
+export function calculateInvestmentResults({ initialInvestment, duration, annualInvestment, expectedReturn }) {
 
-  for (let i = 0; i < duration; i++) {
-    const interestEarnedInYear = investmentValue * (expectedReturn / 100);
-    investmentValue += interestEarnedInYear + annualInvestment;
-    // TODO: ajouter un champ investedCapital et interestSum
-    annualData.push({
-      year: i + 1, // year identifier
-      interest: interestEarnedInYear, // the amount of interest earned in this year
-      valueEndOfYear: investmentValue, // investment value at end of year
-      annualInvestment: annualInvestment, // investment added in this year
+  const yearlyData = [];
+
+  let valueEndOfYear = initialInvestment;
+  let investedCapital = initialInvestment;
+  let interestSum = 0;
+
+  for (let year = 1; year <= duration; year++) {
+
+    // 1. Intérêts calculés AVANT ajout de l'investissement annuel
+    const interest = valueEndOfYear * (expectedReturn / 100);
+
+    // 2. Mise à jour de la valeur de fin d'année
+    valueEndOfYear += interest + annualInvestment;
+
+    // 3. Mise à jour du capital investi
+    investedCapital += annualInvestment;
+
+    // 4. Mise à jour du cumul d'intérêts
+    interestSum += interest;
+
+    yearlyData.push({
+      year,
+      interest: Math.round(interest),
+      valueEndOfYear: Math.round(valueEndOfYear),
+      annualInvestment,
+      investedCapital,
+      interestSum: Math.round(interestSum)
     });
   }
 
-  return annualData;
+  return yearlyData;
 }
+
 
 // The browser-provided Intl API is used to prepare a formatter object
 // This object offers a "format()" method that can be used to format numbers as currency
